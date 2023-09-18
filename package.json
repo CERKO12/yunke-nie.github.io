@@ -1,0 +1,21 @@
+{
+  "name": "eportfolio",
+  "version": "1.0.0",
+  "description": "My personal E-Portfolio web page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.49.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "prettier": "3.0.3",
+    "lint": "eslint 'src/**/*.{js,jsx}'",
+    "format": "prettier --write 'src/**/*.{js,jsx,css,html}'"
+  }
+  
+}
