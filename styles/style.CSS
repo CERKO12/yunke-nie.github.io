@@ -1,0 +1,70 @@
+nav {
+    background-color: #f0f0f0; /* Replace with your desired color */
+    /* background-image: url('path/to/your/image.jpg'); /* Replace with the actual path to your image */
+    background-size: cover; 
+    background-repeat: no-repeat; 
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px; 
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.school-logo {
+    width: 240px; /* Set a fixed width */
+    height: 244px;
+    object-fit: contain; /* Maintain aspect ratio without cropping */
+    border-radius: 10px; /* Optional: for rounded corners */
+}
+
+.education-details {
+    max-width: 500px; /* Adjust the max-width as necessary */
+    padding-left: 20px; /* Adds some space between the logo and the details */
+}
+
+.education-block {
+    display: flex;
+    align-items: start; /* Aligns the top of the logo and text */
+    margin-bottom: 20px; /* Adds some space between the blocks */
+}
+
+
+
+/* Mobile view */
+@media (max-width: 767px) {
+    nav ul {
+        flex-direction: column; /* Stack the items vertically on small screens */
+        align-items: center; /* Center the items */
+    }
+    
+    nav li {
+        margin-right: 0; /* Remove the margin on the right */
+        margin-bottom: 10px; /* Add some space between the stacked items */
+    }
+
+    .education-block {
+        flex-direction: column;
+        align-items: center;
+        text-align: center; /* Center text on small screens */
+    }
+
+    .school-logo {
+        margin-bottom: 10px; /* Adds some space between the logo and the text on small screens */
+    }
+
+    .education-details {
+        max-width: 100%; /* Allow details to take full width on small screens */
+        padding-left: 0; /* Remove padding on small screens */
+    }
+}
