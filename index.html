@@ -8,15 +8,10 @@
     <link rel="stylesheet" href="/styles/style.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <link rel="icon" href="images/giraffe_favcon.png" type="image/x-icon" alt = "A cartoon giraffe as icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 </head>
 <body>
-    <sectio id = "hero" class = "align-items-left">
-        <div class="title">
-            <h1>Yunke Nie's E-Portfolio</h1>
-        </div>
-    </section>
-
     <header>
         <div class="container">
             <nav>
@@ -31,18 +26,31 @@
             </nav>
         </div>
     </header>
+    
+    <section id="hero" class="d-flex align-items-start">
+        <div class="title">
+            <h1>Yunke Nie's E-Portfolio</h1>
+        </div>
+    </section>
 
-    <section id = "about">
+    <section id="about">
         <div class="container">
             <div class="title">
                 <h2>About Me</h2>
             </div>
-            <div class="content">
-                <p>My name is Yunke Nie. I am a senior student at the University of Rochester. I am majoring in Computer Science and minoring in Business. I am interested in software development and data science. I am currently looking for full-time software engineer positions.</p>
+            <div class="content d-flex justify-content-between align-items-start">
+                <img src="images/myself.jpg" alt="Yunke Nie's photo" style="width: 200px; margin-right: 20px; flex-shrink: 0;">
+                <div style="max-width: 800px;">
+                    <p>I am Yunke Nie, a master's student in Computer Science major from Northeastern University, San Jose Campus. I graduated from Rose-Hulman Institute of Technology, in 2022, with a Bachelor of Science in Computer Science. I also have minors in Japanese and Data science.</p>
+                    <p>My passion lies in the field of data mining, where I have gained valuable experience in improving advertisement strategies for a friend’s start-up business. This experience has allowed me to sharpen my skills in analyzing large datasets, extracting meaningful insights, and implementing strategies for targeted marketing campaigns.</p>
+                    <p>Additionally, I have developed a strong interest in the exciting world of FinTech. Currently, I am preparing for the CFA I exam to deepen my understanding of financial markets and enhance my ability to analyze investment opportunities.</p>
+                    <p>As I embark on the next phase of my academic journey, I am actively seeking internship or co-op opportunities in 2024. I am eager to apply and expand my knowledge, contribute to real-world projects, and collaborate with teams that value innovation and growth.</p>
+                    <p>For more information, you can check my resume <a href="docs/Yunke-Nie-Resume.pdf" target="_blank">here</a>.</p>
+                </div>
             </div>
         </div>
     </section>
-
+    
     <section id="education">
         <div class="container">
             <div class="title">
@@ -68,7 +76,6 @@
                                 <h3>Northeastern University - San Jose Campus</h3>
                                 <p><strong>Location:</strong> San Jose, CA</p>
                                 <p><strong>Program:</strong> Computer Science, M.S.</p>
-                                <p><strong>Major:</strong> Computer Science</p>
                                 <p><strong>Expected Graduation:</strong> May 2024</p>
                             </div>
                         </div>
@@ -78,34 +85,38 @@
         </div>
     </section>
     
-    
-    
-
-    <section id = "experience">
-        <div class="container">
-            <div class="title">
-                <h2>Experience</h2>
-            </div>
-            <div class="content">
-                <div class="row">
-                    <div class="col">
-                        <h3>Software Engineer Intern</h3>
-                        <p>June 2021 - August 2021</p>
-                        <p>Worked on a team of 5 to develop a web application for a client using React, Node.js, and MongoDB</p>
-                        <p>Developed a web application for a client using React, Node.js, and MongoDB</p>
-                        <p>Developed a web application for a client using React, Node.js, and MongoDB</p>
-                    </div>
-                    <div class="col">
-                        <h3>Software Engineer Intern</h3>
-                        <p>June 2021 - August 2021</p>
-                        <p>Worked on a team of 5 to develop a web application for a client using React, Node.js, and MongoDB</p>
-                        <p>Developed a web application for a client using React, Node.js, and MongoDB</p>
-                        <p>Developed a web application for a client using React, Node.js, and MongoDB</p>
-                    </div>
+    <section id="experience">
+    <div class="container">
+        <div class="title">
+            <h2>Experience</h2>
+        </div>
+        <div class="content">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Solution Architect Intern - Huawei Cloud</h3>
+                    <p><strong>Dongguan, China</strong></p>
+                    <p><strong>June 2023 - Aug 2023</strong></p>
+                    <ul>
+                        <li>Responsible for technical communication during the pre-sales stage with key clients and work on insights into opportunities with key clients.</li>
+                        <li>Collaborate with teams such as sales (BD), R&D, and operations to effectively manage key clients continuously.</li>
+                        <li>Responsible for the capabilities of Huawei cloud products and solutions, engaging in tasks such as requirement analysis for public cloud projects, solution designing, and product demonstration.</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h3>Data Analyst (Part time) - Intecular</h3>
+                    <p><strong>San Jose, CA</strong></p>
+                    <p><strong>June 2022 - Aug 2022</strong></p>
+                    <ul>
+                        <li>Analyzed data from Facebook ads Insights API to provide critical ads optimization feedback.</li>
+                        <li>Developed a data visualization project to display ads efficiency (views vs. ads cost) acrossvarious time periods with automated weekly updates for fast iterative feedback.</li>
+                        <li>Improved 20% ads efficiency by advertising in the high-efficient time period.</li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
 
     <section id="skills">
     <div class="container">
@@ -118,34 +129,26 @@
                     <h3>Programming Languages</h3>
                     <p>Java</p>
                     <p>Python</p>
-                    <p>C++</p>
                     <p>JavaScript</p>
                     <p>HTML</p>
                     <p>CSS</p>
                     <p>SQL</p>
-                    <p>PHP</p>
                 </div>
                 <div class="col-md-4">
                     <h3>Frameworks</h3>
                     <p>React</p>
                     <p>Node.js</p>
-                    <p>Express</p>
                     <p>Bootstrap</p>
                     <p>jQuery</p>
-                    <p>Flask</p>
                     <p>Spring</p>
-                    <p>Android</p>
                 </div>
                 <div class="col-md-4">
                     <h3>Tools</h3>
                     <p>Git</p>
                     <p>GitHub</p>
-                    <p>GitLab</p>
-                    <p>Heroku</p>
                     <p>Postman</p>
                     <p>MySQL</p>
                     <p>MongoDB</p>
-                    <p>Google Cloud Platform</p>
                 </div>
             </div>
         </div>
@@ -153,16 +156,41 @@
 </section>
 
 
-    <section id="contact">
-        <div class="container">
-            <div class="title">
-                <h2>Contact Me</h2>
+<section id="contact">
+    <div class="container">
+        <div class="title">
+            <h2>Contact Me</h2>
+        </div>
+        <div class="content">
+            <div class="row">
+                <div class="col-md-3 text-center">
+                    <a href="https://www.linkedin.com/in/yunke-nie/" target="_blank" class="btn btn-link">
+                        <i class="fab fa-linkedin fa-2x"></i>
+                        <p>LinkedIn</p>
+                    </a>
+                </div>
+                <div class="col-md-3 text-center">
+                    <a href="https://twitter.com/NieYunke" target="_blank" class="btn btn-link">
+                        <i class="fab fa-twitter fa-2x"></i>
+                        <p>Twitter</p>
+                    </a>
+                </div>
+                <div class="col-md-3 text-center">
+                    <a href="https://github.com/Yunke-Nie" target="_blank" class="btn btn-link">
+                        <i class="fab fa-github fa-2x"></i>
+                        <p>GitHub</p>
+                    </a>
+                </div>
+                <div class="col-md-3 text-center">
+                    <a href="mailto:nie.yun@rose-hulman.edu" class="btn btn-link">
+                        <i class="fas fa-envelope fa-2x"></i>
+                        <p>Email</p>
+                    </a>
+                </div>
             </div>
-            <div class="content">
-                <div class="row">
-                    <div class="col">
-                        <h3>Email</h3>
-                        <p>
-    </section>
+        </div>
+    </div>
+</section>
+
 </body>
 </html>

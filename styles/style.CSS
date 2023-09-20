@@ -1,8 +1,12 @@
+.container {
+    padding-top: 60px; /* Adjust this value based on the height of your navbar */
+}
+
 nav {
-    background-color: #f0f0f0; /* Replace with your desired color */
-    /* background-image: url('path/to/your/image.jpg'); /* Replace with the actual path to your image */
-    background-size: cover; 
-    background-repeat: no-repeat; 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 nav ul {
@@ -10,16 +14,23 @@ nav ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px; /* Increased font size here */
 }
 
 nav li {
     display: inline;
-    margin-right: 20px; 
 }
 
-nav a {
+nav li a {
     text-decoration: none;
 }
+
+.title {
+    margin-top: 60px; /* To give space between nav bar and hero section */
+}
+
 
 .school-logo {
     width: 240px; /* Set a fixed width */
