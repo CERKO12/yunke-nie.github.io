@@ -1,81 +1,144 @@
-.container {
-    padding-top: 60px; /* Adjust this value based on the height of your navbar */
-}
-
 nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
+  background-color: #f0f0f0;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    display: flex;
-    justify-content: space-around;
-    font-size: 20px; /* Increased font size here */
+  list-style-type: none;
+  margin: 20px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 nav li {
-    display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 30px;
 }
 
 nav li a {
-    text-decoration: none;
+  text-decoration: none;
+  font-size: 30px;
 }
 
-.title {
-    margin-top: 60px; /* To give space between nav bar and hero section */
+header .container {
+  display: flex;
+  justify-content: space-between;
 }
 
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0;
+  list-style-type: none;
+}
+
+header nav ul li {
+  flex: 1;
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+}
+
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e9ecef;
+}
 
 .school-logo {
-    width: 240px; /* Set a fixed width */
-    height: 244px;
-    object-fit: contain; /* Maintain aspect ratio without cropping */
-    border-radius: 10px; /* Optional: for rounded corners */
+  width: 240px;
+  height: 244px;
+  object-fit: contain;
+  border-radius: 10px;
 }
 
 .education-details {
-    max-width: 500px; /* Adjust the max-width as necessary */
-    padding-left: 20px; /* Adds some space between the logo and the details */
+  max-width: 500px;
+  padding-left: 20px;
 }
 
 .education-block {
-    display: flex;
-    align-items: start; /* Aligns the top of the logo and text */
-    margin-bottom: 20px; /* Adds some space between the blocks */
+  display: flex;
+  align-items: start;
+  margin-bottom: 20px;
 }
 
+#topButton {
+  display: none;
+  position: fixed;
+  bottom: 75px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
 
+#topButton:hover {
+  background-color: #555;
+}
+
+.project-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.project-image {
+  max-width: 250px;
+  margin-right: 20px;
+}
+
+.project-text {
+  max-width: 600px;
+}
+
+.project-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
 
 /* Mobile view */
 @media (max-width: 767px) {
-    nav ul {
-        flex-direction: column; /* Stack the items vertically on small screens */
-        align-items: center; /* Center the items */
-    }
-    
-    nav li {
-        margin-right: 0; /* Remove the margin on the right */
-        margin-bottom: 10px; /* Add some space between the stacked items */
-    }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .education-block {
-        flex-direction: column;
-        align-items: center;
-        text-align: center; /* Center text on small screens */
-    }
+  nav li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
 
-    .school-logo {
-        margin-bottom: 10px; /* Adds some space between the logo and the text on small screens */
-    }
+  .education-block {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
-    .education-details {
-        max-width: 100%; /* Allow details to take full width on small screens */
-        padding-left: 0; /* Remove padding on small screens */
-    }
+  .school-logo {
+    margin-bottom: 10px;
+  }
+
+  .education-details {
+    max-width: 100%;
+    padding-left: 0;
+  }
 }
