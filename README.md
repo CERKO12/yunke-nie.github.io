@@ -1,8 +1,12 @@
 # Yunke Nie's E-Portfolio web page
 
 > Author: Yunke Nie
+> 
 > Course Link: [https://johnguerra.co/classes/webDevelopment_fall_2023/](https://johnguerra.co/classes/webDevelopment_fall_2023/)
+> 
 > Design document is also included in the readme file.
+> 
+> [Introduction video](https://northeastern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=5c10bafc-9b4c-43fc-8029-b08300996236)
 
 The website is deployed at [https://yunke-nie.github.io/](https://yunke-nie.github.io/) via GitHub Pages.
 
@@ -27,7 +31,7 @@ This project's wireframe is designed by [Figma](https://www.figma.com/file/IqNDH
 ### Home Page (index.html)
 
 Here is the screenshot of the home page. 
-![screenshot](./docs/screenshot.png)
+![screenshot](./docs/Screenshot.png)
 
 Project page:
 ![project_gallery](./docs/projects_screenshot.png)
